@@ -20,6 +20,10 @@ if (empty($_SESSION['admin']) OR empty($_SESSION['type'])) {
 		float: left;
 		text-align: center;
 		padding-top: 20px;
+		border: 5px solid green;
+		border-radius: 20px 20px 20px 20px;
+		cursor: pointer;
+		background-color: purple;
 	}
 	</style>
 </head>
@@ -63,6 +67,7 @@ if (empty($_SESSION['admin']) OR empty($_SESSION['type'])) {
 				echo "<br><b style='color:#408080; font-family:Arial; font-size:35px;'>".$row = mysql_num_rows($query)."</b>"; 
 				 ?>
 			</div><br><br>
+		
 			<div class="total">
 				<b>Total Admins</b><hr>
 				<?php
